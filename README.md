@@ -1,5 +1,5 @@
 # homebrew-teku
-  [![Discord](https://img.shields.io/badge/Chat-on%20Discord-blue)](https://discord.gg/7hPv2T6)
+  [![Discord](https://img.shields.io/badge/Chat-on%20Discord-blue)](https://discord.gg/teku)
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/ConsenSys/teku/blob/master/LICENSE)
   
 Homebrew Tap for [Teku](https://github.com/ConsenSys/teku). Teku is a Java implementation of the Ethereum 2.0 Beacon Chain.
