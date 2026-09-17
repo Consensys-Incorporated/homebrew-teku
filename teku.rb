@@ -1,9 +1,9 @@
 class Teku < Formula
   desc "Teku Ethereum 2 beacon chain client"
   homepage "https://github.com/consensys/teku"
-  url "https://artifacts.consensys.net/public/teku/raw/names/teku.zip/versions/26.8.0/teku-26.8.0.zip"
+  url "https://artifacts.consensys.net/public/teku/raw/names/teku.zip/versions/26.9.0/teku-26.9.0.zip"
   # update with: ./updateTeku.sh <new-version>
-  sha256 "e29759d182442ea26096188796f69bbb8d46d987534128edf27ffb5e955bfeb4"
+  sha256 "b8affcccbeb3444b0cf35206c28782f8d3316dc3b416b9c1adeaeabc4de41ca9"
   head "https://artifacts.consensys.net/public/teku/raw/names/teku.zip/versions/develop/teku-develop.zip"
 
   depends_on "openjdk" => "21+"
