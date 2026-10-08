@@ -1,0 +1,13 @@
+name: Verify formula
+
+on:
+  pull_request:
+    paths:
+      - teku.rb
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./verifyTeku.sh
