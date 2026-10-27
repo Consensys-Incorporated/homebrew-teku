@@ -8,7 +8,7 @@ function cleanup() {
 trap cleanup EXIT
 
 VERSION=${1?Must specify the Teku version to get}
-URL="https://artifacts.consensys.net/public/teku/raw/names/teku.zip/versions/${VERSION}/teku-${VERSION}.zip"
+URL="https://github.com/Consensys/teku/releases/download/${VERSION}/teku-${VERSION}.zip"
 echo "Downloading version ${VERSION} of Teku from ${URL}..."
 curl -o "${TEMP}/teku-${VERSION}.zip" -L --fail "${URL}"
 
@@ -24,9 +24,8 @@ class Teku < Formula
   url "${URL}"
   # update with: ./updateTeku.sh <new-version>
   sha256 "${HASH}"
-  head "https://artifacts.consensys.net/public/teku/raw/names/teku.zip/versions/develop/teku-develop.zip"
 
-  depends_on "openjdk" => "21+"
+  depends_on "openjdk" => "25+"
 
   def install
     cp_r ".", "#{prefix}/dist"
