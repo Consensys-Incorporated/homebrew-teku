@@ -5,7 +5,7 @@ class Teku < Formula
   # update with: ./updateTeku.sh <new-version>
   sha256 "f79b02fd3e23100b12378fe23241cbff6dda9358d4a2fdccccd7c32409933b38"
 
-  depends_on "openjdk" => "21+"
+  depends_on "openjdk" => "25+"
 
   def install
     cp_r ".", "#{prefix}/dist"
