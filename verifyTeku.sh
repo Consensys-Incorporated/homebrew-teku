@@ -8,7 +8,7 @@ trap 'rm -rf "${TEMP}"' EXIT
 
 URL=$(sed -n 's/^  url "\(.*\)"$/\1/p' "${FORMULA}")
 SHA=$(sed -n 's/^  sha256 "\(.*\)"$/\1/p' "${FORMULA}")
-VERSION=$(sed -n 's#.*/versions/\([^/]*\)/teku-\1\.zip$#\1#p' <<<"${URL}")
+VERSION=$(sed -n 's#.*/download/\([^/]*\)/teku-\1\.zip$#\1#p' <<<"${URL}")
 [[ -n "${URL}" && -n "${SHA}" && -n "${VERSION}" ]] || { echo "Could not parse url/sha256/version from ${FORMULA}"; exit 1; }
 
 # GitHub release is still a draft when the homebrew PR is opened, so use tags, not releases.
